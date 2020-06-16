@@ -2,11 +2,14 @@ package com.kingge.tinyrpc.entity;
 
 import java.io.Serializable;
 
+/**
+ * 这个就是相当于rpc通信协议
+ */
 public class ClassInfo implements Serializable{
-    private String ClassName;
-    private String methodName;
-    private Object[] args;
-    private Class[] clazzType;
+    private String ClassName;//调用的接口全类名
+    private String methodName;//调用的方法名
+    private Object[] args;//方法参数
+    private Class[] clazzType;//接口类型
 
     public ClassInfo() {
     }
